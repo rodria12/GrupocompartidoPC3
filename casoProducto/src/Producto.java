@@ -7,6 +7,10 @@ public class Producto {
     
     public Producto(){} //constructor vacío
     
+    public double calcularDescuento(double porcentaje) {
+    return this.precio - (this.precio * porcentaje / 100);
+}
+
     public Producto ( int cod, String nombre, 
             double precio, int stock){
         this.id = cod;
